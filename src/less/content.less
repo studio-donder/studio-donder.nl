@@ -3,23 +3,11 @@
 .content {
     padding-top: (@avatar-height / 2) + @content-padding-vertical;
 
-    .github {
-        color: @color-github;
-    }
-
-    .twitter {
-        color: @color-twitter;
-    }
-
-    .icheckmovies {
-        color: @color-icheckmovies;
+    .icon {
+        color: @color-grey-darker;
     }
 
     a {
-        &:hover {
-            color: @color-blue;
-        }
-
         .icon {
             display: block;
             font-size: 2em;
@@ -28,6 +16,18 @@
         .title {
             display: none;
         }
+    }
+
+    .github:hover .icon {
+        color: @color-github;
+    }
+
+    .twitter:hover .icon {
+        color: @color-twitter;
+    }
+
+    .icheckmovies:hover .icon {
+        color: @color-icheckmovies;
     }
 
     p {

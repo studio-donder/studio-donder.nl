@@ -15,20 +15,10 @@ module.exports = function (grunt) {
         },
 
         clean: {
-            generatedResources: 'build'
+            generatedResources: ['build', 'temp']
         },
 
         copy: {
-            backdrop: {
-                expand: true,
-                flatten: true,
-                cwd: 'src/images',
-                src: [
-                    'backdrop.jpg'
-                ],
-                dest: 'temp/images',
-                filter: 'isFile'
-            },
             fontAwesomeFonts: {
                 expand: true,
                 flatten: true,
@@ -154,6 +144,12 @@ module.exports = function (grunt) {
                     dest: 'temp/images'
                 }]
             },
+            backdrop: {
+                files: [{
+                    src: ['src/images/backdrop.svg'],
+                    dest: 'temp/images'
+                }]
+            },
             favicon: {
                 files: [{
                     src: ['src/images/favicon.svg'],
@@ -194,9 +190,9 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('buildImages', [
-        'copy:backdrop',
         'generateFavicons',
         'svg2png:avatar',
+        'svg2png:backdrop',
         'image_resize:avatar',
         'imagemin:build'
     ]);
