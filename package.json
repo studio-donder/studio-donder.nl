@@ -21,5 +21,8 @@
     "grunt-shell": "1.1.2",
     "grunt-svg-to-png": "0.2.5",
     "imagemin-mozjpeg": "4.0.0"
+  },
+  "scripts": {
+    "test": "grunt test"
   }
 }

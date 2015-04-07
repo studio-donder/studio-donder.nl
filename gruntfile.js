@@ -189,6 +189,10 @@ module.exports = function (grunt) {
         'copy:iCheckMoviesFonts'
     ]);
 
+    grunt.registerTask('test', [
+        'default'
+    ]);
+
     grunt.registerTask('buildImages', [
         'generateFavicons',
         'svg2png:avatar',
