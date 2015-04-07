@@ -1,0 +1,11 @@
+@leader-height: 250px;
+@avatar-height: 200px;
+
+.leader {
+    height: @leader-height;
+
+    .avatar {
+        height: @avatar-height;
+        margin-top: @leader-height - (@avatar-height / 2);
+    }
+}

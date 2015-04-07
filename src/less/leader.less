@@ -1,0 +1,14 @@
+@leader-height: 150px;
+@avatar-height: 120px;
+@background-size: 250px;
+
+.leader {
+    background: @color-blue-darker url(../images/backdrop.jpg) center 0 no-repeat;
+    background-size: 1400px auto;
+    height: @leader-height;
+
+    .avatar {
+        height: @avatar-height;
+        margin-top: @leader-height - (@avatar-height / 2);
+    }
+}

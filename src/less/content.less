@@ -1,0 +1,47 @@
+@content-padding-vertical: 20px;
+
+.content {
+    padding-top: (@avatar-height / 2) + @content-padding-vertical;
+
+    .github {
+        color: @color-github;
+    }
+
+    .twitter {
+        color: @color-twitter;
+    }
+
+    .icheckmovies {
+        color: @color-icheckmovies;
+    }
+
+    a {
+        &:hover {
+            color: @color-blue;
+        }
+
+        .icon {
+            display: block;
+            font-size: 2em;
+        }
+
+        .title {
+            display: none;
+        }
+    }
+
+    p {
+        margin-bottom: 1em;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin: 0 0.5em;
+        }
+    }
+}

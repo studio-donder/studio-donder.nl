@@ -1,0 +1,8 @@
+{
+  "name": "nl.studio-donder.www",
+  "dependencies": {
+    "bootstrap": "3.3.4",
+    "font-awesome": "4.3.0",
+    "icheckmovies-icon-font": "1.0.0"
+  }
+}

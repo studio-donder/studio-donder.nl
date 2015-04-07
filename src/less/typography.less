@@ -1,0 +1,40 @@
+@font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-condensed: "Open Sans Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif: Georgia, "Times New Roman", Times, serif;
+@font-family-monospace: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+@font-family-base: @font-family-sans-serif;
+@font-size-base: 22px;
+@font-size-large: ceil((@font-size-base * 1.25));
+@font-size-small: ceil((@font-size-base * 0.85));
+@text-color: @color-grey-darker;
+
+@headings-font-family: @font-family-sans-condensed;
+@headings-font-weight: 700;
+@headings-line-height: 1.1;
+@headings-color: @color-blue-dark;
+
+@font-size-h1: floor((@font-size-base * 2));
+@font-size-h2: floor((@font-size-base * 1.4));
+@font-size-h3: ceil((@font-size-base * 1.4));
+@font-size-h4: @font-size-base;
+@font-size-h5: @font-size-base;
+@font-size-h6: @font-size-h5;
+
+body {
+    font-weight: 600;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+a {
+    color: @color-grey-darker;
+
+    &:hover {
+        color: @color-blue;
+        text-decoration: none;
+    }
+}

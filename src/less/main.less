@@ -1,0 +1,18 @@
+@import "../../bower_components/bootstrap/less/bootstrap";
+@import "../../lib/icheckmovies-icon-font/iCheckMovies";
+@import "../../bower_components/font-awesome/less/font-awesome";
+@import "variables";
+@import "colors";
+@import "typography";
+@import "layout";
+@import "leader";
+@import "content";
+
+@media (min-width: @screen-sm-min) {
+    @import "small/leader";
+    @import "small/content";
+}
+
+@media (min-width: @screen-lg-min) {
+    @import "large/leader";
+}
