@@ -5,4 +5,8 @@
 
 The source code for the [Studio Donder website][1].
 
+## License
+
+See the [``LICENSE``](LICENSE) file.
+
 [1]: http://www.studio-donder.nl/
